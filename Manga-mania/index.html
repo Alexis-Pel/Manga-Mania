@@ -3,19 +3,33 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title>Manga Mania</title>
+	<script type="text/javascript" src="name.js"></script>
 </head>
 	<body>
 		<header>
 			<h1> Manga Mania </h1>
-			<p> Bienvenue sur le site de l'actu manga </p>
+			<p>Bienvenue <a onclick=setUserName() id="username">Utilisateur (cliquer ici pour vous connecter)</a> sur le site de l'actu manga </p>
 		</header>
 		<div class="menu">
 			<ul>
-			<li><a href="#1">Bouton1</a></li>
-			<li><a href="#2">Bouton2</a></li>
-			<li><a href="#3">Bouton3</a></li>
-			<li><a href="#4">Bouton4</a></li>
+			<li><a id="bouton1" href="#1">Accueil</a></li>
+			<li><a href="#2">Articles</a></li>
+			<li><a href="boutique.html">Boutique</a></li>
+			<li><a href="#4">Contact</a></li>
 			</ul>
 		</div>
+
+		<script>
+			function setUserName() {
+  			let myName = prompt('Veuillez entrer votre nom.');
+  			if(!myName) {
+    		setUserName();
+  			} else {
+				let name = document.getElementById("username");
+				name.innerHTML= myName;
+  				}
+			}
+		</script>
 	</body>
+	<footer></footer>
 </html>

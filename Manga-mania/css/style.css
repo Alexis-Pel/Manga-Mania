@@ -19,10 +19,6 @@ header {
 	margin-right: 20%;
 	border-radius: 5px;
 }
-a {
-	color: #6f1c1f;
-	text-decoration-thickness: all;
-}
 
 ul {
 	display: flex;
@@ -42,6 +38,7 @@ ul li a:focus {
 	0 -3px 0 hsl(210,100%, 54%) inset,
 	0 -4px 0 hsl(210,100%, 60%) inset,
 	0 -5px 0 hsl(210,100%, 70%) inset,
+	transition: padding .3s, background .3s;
 }
 
 ul li a:active{
@@ -49,7 +46,7 @@ ul li a:active{
 	box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
 }
 
-ul li a{
+a{
 	text-decoration: none;
 	color: rgba(0,0,0, .7);
 	border-left: solid black;
