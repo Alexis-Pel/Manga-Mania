@@ -10,8 +10,9 @@
 			<h1> Manga Mania </h1>
 			<p>Bienvenue <a onclick=setUserName() id="username">Utilisateur</a> sur le site de l'actu manga </p>
 		</header>
-		<form action="Formulaire.php"> 
-			<button type="submit">Se connecter</button>
+		<form> 
+			<button onclick=TEST() type="submit">Se connecter</button>
+			<button onclick=TEST3() type="submit">Se Déconnecter</button>
 		  </form>
 		<div class="menu">
 			<ul>
@@ -24,13 +25,17 @@
 		<div class="container">
 			<div><h3 class="tendance">Les Mangas en tendance ce mois-ci</h3>
 				<div class="manga">
-					Naruto
+					Boruto: Naruto Next Generations</br>
+					<img width="20%" style="opacity: inherit;" src="https://www.ecranlarge.com/uploads/image/001/350/boruto-naruto-next-generations-affiche-officiel-1350746.jpg">
 				</div>
 				<div class="manga">
-					Dragon Ball
+					Dragon Ball Super
 				</div>
 				<div class="manga">
 					Attack on titan
+				</div>
+				<div class="manga">
+					Hunter X Hunter
 				</div>
 			</div>
 			<div><h3 class="actualite">Actualitées</h3>
@@ -38,16 +43,27 @@
 		</div>
 		<script>
 			function TEST() {
-				
-			}
-			function setUserName() {
-  			let myName = prompt('Veuillez entrer votre nom.');
-  			if(!myName) {
-    		setUserName();
+  			let PSEUDO = prompt('Veuillez entrer votre nom.');
+  			if(!PSEUDO) {
+    		TEST();
   			} else {
-				let name = document.getElementById("username");
-				name.innerHTML= myName;
+				let pseudo = document.getElementById("username");
+				username.innerHTML= PSEUDO;
+				localStorage.setItem("username", PSEUDO)
+				TEST2();
   				}
+			}
+			function TEST2(){
+				let MONEY = prompt('Veuillez Déposer un fond :');
+  			if(!MONEY) {
+    		TEST2();
+  			} else {
+				localStorage.setItem("money", MONEY)
+  				}
+			}
+			function TEST3(){
+				localStorage.clear();
+				self.location.reload();
 			}
 		</script>
 	</body>

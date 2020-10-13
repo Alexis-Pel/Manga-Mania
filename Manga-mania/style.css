@@ -13,7 +13,7 @@ body {
 
 header {
 	text-align: center;
-	background-color: #ffbeb7;
+	background: linear-gradient(#ffffff, #cf5656);
 	margin: 40px;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -76,8 +76,8 @@ h1{
 	display: flex;
 	justify-content: space-evenly;
 	border-radius: 10px;
-	opacity: 0.8;
 }
+
 
 .mangas {
 	display: flex;
@@ -87,25 +87,27 @@ h1{
 }
 
 .tendance {
-	background-color: #e71837;
-	border: solid yellow;
+	background: linear-gradient(#fa0025, #ce1170);
 	padding-right: 200px;
 	padding-left: 200px;
 	margin-right: 200px;
+	opacity: 0.8;
 }
 
 .actualite {
 	justify-content: space-around;
-	background-color: #e71837;
-	border: solid yellow;
+	background: linear-gradient(#fa0025, #ce1170);
 	padding-right: 80px;
 	padding-left: 80px;
+	opacity: 0.8;
 }
 .manga {
+	
 	float: left;
 	width: 70%;
 	border: solid 1px;
 	margin:10px;
+	background: linear-gradient(#fa0025, #cc3a3f);
 }
 
 
