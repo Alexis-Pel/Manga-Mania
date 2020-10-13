@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 	<title>Manga Mania</title>
-	<script type="text/javascript" src="name.js"></script>
 </head>
 	<body>
 		<header>
 			<h1> Manga Mania </h1>
-			<p>Bienvenue <a onclick=setUserName() id="username">Utilisateur (cliquer ici pour vous connecter)</a> sur le site de l'actu manga </p>
+			<p>Bienvenue <a onclick=setUserName() id="username">Utilisateur</a> sur le site de l'actu manga </p>
 		</header>
+		<form action="Formulaire.php"> 
+			<button type="submit">Se connecter</button>
+		  </form>
 		<div class="menu">
 			<ul>
 			<li><a id="bouton1" href="#1">Accueil</a></li>
@@ -18,8 +21,25 @@
 			<li><a href="#4">Contact</a></li>
 			</ul>
 		</div>
-
+		<div class="container">
+			<div><h3 class="tendance">Les Mangas en tendance ce mois-ci</h3>
+				<div class="manga">
+					Naruto
+				</div>
+				<div class="manga">
+					Dragon Ball
+				</div>
+				<div class="manga">
+					Attack on titan
+				</div>
+			</div>
+			<div><h3 class="actualite">Actualitées</h3>
+			</div>
+		</div>
 		<script>
+			function TEST() {
+				
+			}
 			function setUserName() {
   			let myName = prompt('Veuillez entrer votre nom.');
   			if(!myName) {

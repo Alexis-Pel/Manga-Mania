@@ -21,7 +21,6 @@ header {
 }
 a {
 	color: #6f1c1f;
-	text-decoration-thickness: all;
 }
 
 ul {
@@ -73,6 +72,41 @@ h1{
 	color: #e71837;
 }
 
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+.mangas {
+	display: flex;
+	align-items: flex-end;
+	flex-flow: row-reverse;
+	align-content: space-around;
+}
+
+.tendance {
+	background-color: #e71837;
+	border: solid yellow;
+	padding-right: 200px;
+	padding-left: 200px;
+	margin-right: 200px;
+}
+
+.actualite {
+	justify-content: space-around;
+	background-color: #e71837;
+	border: solid yellow;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+.manga {
+	float: left;
+	width: 70%;
+	border: solid 1px;
+	margin:10px;
+}
 
 
 
