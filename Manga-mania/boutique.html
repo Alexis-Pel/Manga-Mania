@@ -8,7 +8,7 @@
     <header>
         <h1> Manga Mania </h1>
         </br>
-    </header>
+	</header>
 	<body onload="setMoney()">
         <div class="menu">
 			<ul>
@@ -18,12 +18,17 @@
 			<li><a href="#4">Contact</a></li>
 			</ul>
 		</div>
-		<h2>Argent : <span id="argent">null</span> €</h2> 
+		<h2 style="border: solid white; float: left; background-color: #ce4141;">Argent : <span id="argent">0</span> €</h2> 
 		<div class="container2">
 			<div class="Cart">
-				<h3>Panier</h3></br>
-				<h3>Total = <span id="toto">null</span>€</h3>
-				<button style="margin-top: 70px;" onclick=checkpay() type="submit">Valider la commande</button>
+				<h3 class="panier">Panier</h3></br>
+				<h3>Total = <span id="toto">0</span>€</h3>
+				<span id="borutoNumber"> </span><p id="replaceB"> </p>
+				<span id="DBSNumber"></span><p id="replaceDBS"> </p>
+				<span id="OPMNumber"></span><p id="replaceOPM"> </p>
+				<span id="narutoNumber"></span><p id="replaceNar"> </p>
+				<span id="HXHNumber"> </span><p id="replaceHXH"> </p>
+				<button onclick=checkpay() type="submit">Valider la commande</button>
 			</div>
 			
 			<div class="boutique">

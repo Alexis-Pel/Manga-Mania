@@ -16,7 +16,7 @@ body {
 
 header {
 	text-align: center;
-	background: linear-gradient(#ffffff, #cf5656);
+	background: linear-gradient(#da8e8e, #cf5656);
 	margin: 40px;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -55,7 +55,7 @@ ul li a:active{
 
 ul li a{
 	text-decoration: none;
-	color: rgba(0,0,0, .7);
+	color: rgba(255, 255, 255, 0.7);
 	border-left: solid black;
 	border-right: solid black;
 	padding-left:50px;
@@ -96,7 +96,7 @@ h1{
 	background: linear-gradient(#fa0025, #ce1170);
 	padding-right: 200px;
 	padding-left: 200px;
-	margin-right: 100px;
+	margin-right: 120px;
 	opacity: 0.8;
 	text-align: center;
 }
@@ -106,7 +106,7 @@ h1{
 	background: linear-gradient(#fa0025, #ce1170);
 	padding-right: 80px;
 	padding-left: 80px;
-	margin-left: 50px;
+	margin-left: 90px;
 	opacity: 0.8;
 	text-align: center;
 }
@@ -131,6 +131,11 @@ h1{
 	border: #cc3a3f;
 	border-radius: 3px;
 }
+.actu1{
+	float:right;
+	width: 30%;
+}
+
 .actu p{
 	color: white;
 }
@@ -144,7 +149,7 @@ h1{
 .boutique {
 	text-align: center;
 	margin-right: 300px;
-	margin-left: 20%;
+	margin-left: 5%;
 	margin-top: 10px;
 	background: linear-gradient(#ee7b8c, #929292);
 	border-radius: 10px;
@@ -152,13 +157,20 @@ h1{
 
 .Cart {
 	border-radius: 50px;
-	margin-left: 80%;
+	margin-left: 71%;
 	float: right;
-	position: fixed;
+	position: absolute;
 	border:solid #6f1c1f;
 	background-color: #cc3a3f;
 	padding-right: 100px;
 	padding-left: 100px;
+	opacity: 0.9;
+}
+
+.panier{
+	border: solid #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .container img{
@@ -166,6 +178,13 @@ h1{
 	margin: 30px;
 }
 
+button{
+	background: linear-gradient(#e71837, #ee7b8c);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border-color: #e71837;
+	box-shadow: black;
+}
 
 
 
