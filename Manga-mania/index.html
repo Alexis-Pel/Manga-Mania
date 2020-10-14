@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" type="image/x-icon" href="icone/favicon.ico" /><link rel="shortcut icon" type="image/x-icon" href="icone/favicon.ico" />
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
 	<title>Manga Mania</title>
@@ -11,7 +12,7 @@
 			<p>Bienvenue <a onclick=setUserName() id="username">Utilisateur</a> sur le site de l'actu manga </p>
 		</header>
 		<form> 
-			<button onclick=TEST() type="submit">Se connecter</button>
+			<button onclick=TEST() type="button">Se connecter</button>
 			<button onclick=TEST3() type="submit">Se Déconnecter</button>
 		  </form>
 		<div class="menu">
@@ -23,49 +24,42 @@
 			</ul>
 		</div>
 		<div class="container">
-			<div><h3 class="tendance">Les Mangas en tendance ce mois-ci</h3>
+			<div><h2 class="tendance">Les Mangas en tendance ce mois-ci</h2>
 				<div class="manga">
 					Boruto: Naruto Next Generations</br>
-					<img width="20%" style="opacity: inherit;" src="https://www.ecranlarge.com/uploads/image/001/350/boruto-naruto-next-generations-affiche-officiel-1350746.jpg">
+					<img width="20%" style="float: right;" src="https://www.ecranlarge.com/uploads/image/001/350/boruto-naruto-next-generations-affiche-officiel-1350746.jpg">
+					<p style="float: left;">Coucou</p>
 				</div>
 				<div class="manga">
 					Dragon Ball Super
+					<img width="20%" style="opacity: inherit;" src="https://www.glenat.com/sites/default/files/images/livres/couv/9782344019887-001-T.jpeg">
 				</div>
 				<div class="manga">
 					Attack on titan
+					<img width="20%" style="opacity: inherit;" src="https://images-na.ssl-images-amazon.com/images/I/81qPzeEO5IL.jpg">
 				</div>
 				<div class="manga">
 					Hunter X Hunter
+					<img width="20%" style="opacity: inherit;" src="https://images-na.ssl-images-amazon.com/images/I/71CQtRibhsL._AC_SY450_.jpg">
 				</div>
 			</div>
-			<div><h3 class="actualite">Actualitées</h3>
+			<div><h2 class="actualite">Actualitées</h2>
+				<div class="actu">
+					<h3 style="text-align: center;">One Punch Man</h3>
+					<img style="width: 40%; float: left;" src="https://www.manga-news.com/public/images/dvd_volumes/one-punch-man-saison2-dvd.jpg">
+					<p>Initialement diffusée pendant le printemps 2019 au japon mais aussi en France sur la plateforme ADN, la  saison 2 de One Punch Man a enfin trouvé sa date de sortie sur support physique chez Kazé.
+
+						C'est donc le 17 novembre que sortiront une intégrale DVD collector au prix public de 49,99€, et une intégrale Blu-ray collector à 58,99€.</p>
+				</div>
+				<div class="actu">
+					ACTU2
+				</div>
+				<div class="actu">
+					ACTU3
+				</div>
 			</div>
 		</div>
-		<script>
-			function TEST() {
-  			let PSEUDO = prompt('Veuillez entrer votre nom.');
-  			if(!PSEUDO) {
-    		TEST();
-  			} else {
-				let pseudo = document.getElementById("username");
-				username.innerHTML= PSEUDO;
-				localStorage.setItem("username", PSEUDO)
-				TEST2();
-  				}
-			}
-			function TEST2(){
-				let MONEY = prompt('Veuillez Déposer un fond :');
-  			if(!MONEY) {
-    		TEST2();
-  			} else {
-				localStorage.setItem("money", MONEY)
-  				}
-			}
-			function TEST3(){
-				localStorage.clear();
-				self.location.reload();
-			}
-		</script>
+		<script src="scripts/user.js"></script>
 	</body>
 	<footer></footer>
 </html>

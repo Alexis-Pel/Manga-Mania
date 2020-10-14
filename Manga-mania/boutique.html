@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" type="image/x-icon" href="icone/favicon.ico" /><link rel="shortcut icon" type="image/x-icon" href="icone/favicon.ico" />
     <link rel="stylesheet" href="style.css">
 	<title>Boutique</title>
 </head>
@@ -8,7 +9,7 @@
         <h1> Manga Mania </h1>
         </br>
     </header>
-	<body>
+	<body onload="setMoney()">
         <div class="menu">
 			<ul>
 			<li><a id="bouton1" href="index.html">Accueil</a></li>
@@ -17,5 +18,59 @@
 			<li><a href="#4">Contact</a></li>
 			</ul>
 		</div>
+		<h2>Argent : <span id="argent">null</span> €</h2> 
+		<div class="container2">
+			<div class="Cart">
+				<h3>Panier</h3></br>
+				<h3>Total = <span id="toto">null</span>€</h3>
+				<button style="margin-top: 70px;" onclick=checkpay() type="submit">Valider la commande</button>
+			</div>
+			
+			<div class="boutique">
+				<h3>Boruto: Naruto Next Generations (Complete Edition)</h3></br>
+				<img width="20%" src="https://www.ecranlarge.com/uploads/image/001/350/boruto-naruto-next-generations-affiche-officiel-1350746.jpg">
+				<form> 
+					<button onclick=addBoruto() type="button">Ajouter au panier (50€)</button>
+					<button onclick=subBoruto() type="button">Retirer du panier</button>
+				</form>
+			</div>
+
+			<div class="boutique">
+				<h3>Dragon Ball : Super (Complete Edition)</h3></br>
+				<img width="20%" style="opacity: inherit;" src="https://www.glenat.com/sites/default/files/images/livres/couv/9782344019887-001-T.jpeg">
+				<form> 
+					<button onclick=addDBSuper() type="button">Ajouter au panier (65€)</button>
+					<button onclick=subDBSuper() type="button">Retirer du panier</button>
+				</form>
+			</div>
+
+			<div class="boutique">
+				<h3>One Punch Man (Complete Edition)</h3></br>
+				<img width="20%" style="opacity: inherit;" src="https://images-na.ssl-images-amazon.com/images/I/71vmRHMrG3L.jpg">
+				<form> 
+					<button onclick=addOPM() type="button">Ajouter au panier (60€)</button>
+					<button onclick=subOPM() type="button">Retirer du panier</button>
+				</form>
+			</div>
+
+			<div class="boutique">
+				<h3>Naruto (Complete Edition)</h3></br>
+				<img width="20%" style="opacity: inherit;" src="https://images.epagine.fr/000/9791090870000_1_75.jpg">
+				<form> 
+					<button onclick=addNaruto() type="button">Ajouter au panier (72€)</button>
+					<button onclick=subNaruto() type="button">Retirer du panier</button>
+				</form>
+			</div>
+
+			<div class="boutique">
+				<h3>Hunter X Hunter (Complete Edition)</h3></br>
+				<img width="20%" style="opacity: inherit;" src="https://images-na.ssl-images-amazon.com/images/I/71CQtRibhsL._AC_SY450_.jpg">
+				<form> 
+					<button onclick=addHXH() type="button">Ajouter au panier (63€)</button>
+					<button onclick=subHXH() type="button">Retirer du panier</button>
+				</form>
+			</div>
+		</div>
+		<script src="scripts/boutique.js"></script>
 	</body>
 </html>

@@ -1,11 +1,14 @@
 body {
 	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 @font-face{
 	font-family: "FasterOne-Regular";
 	src:url("fonts/FasterOne-Regular.ttf");
 }
+
 @font-face{
 	font-family:Monoton-Regular;
 	src:url("fonts/Monoton-Regular.ttf");
@@ -19,6 +22,7 @@ header {
 	margin-right: 20%;
 	border-radius: 5px;
 }
+
 a {
 	color: #6f1c1f;
 }
@@ -32,6 +36,7 @@ ul {
 	margin-right: 25px;
 
 }
+
 ul li a:hover,
 ul li a:focus {
 	background: rgba(255,255,255, .2);
@@ -67,6 +72,7 @@ ul li {
 	display: table-cell;
 	text-shadow: 0 1px 0 rgba(255,255,255, .4);
 }
+
 h1{
 	font-family: "Monoton-Regular";
 	color: #e71837;
@@ -90,8 +96,9 @@ h1{
 	background: linear-gradient(#fa0025, #ce1170);
 	padding-right: 200px;
 	padding-left: 200px;
-	margin-right: 200px;
+	margin-right: 100px;
 	opacity: 0.8;
+	text-align: center;
 }
 
 .actualite {
@@ -99,20 +106,65 @@ h1{
 	background: linear-gradient(#fa0025, #ce1170);
 	padding-right: 80px;
 	padding-left: 80px;
+	margin-left: 50px;
 	opacity: 0.8;
+	text-align: center;
 }
+
 .manga {
 	
 	float: left;
-	width: 70%;
+	width: 80%;
 	border: solid 1px;
+	border-radius: 3px;
 	margin:10px;
 	background: linear-gradient(#fa0025, #cc3a3f);
 }
 
+.actu {	
+	float: left;
+	width: 70%;
+	border: solid 1px;
+	margin:10px;
+	margin-left: 100px;
+	background: linear-gradient(#fa0075b4, #ca0d13);
+	border: #cc3a3f;
+	border-radius: 3px;
+}
+.actu p{
+	color: white;
+}
+.container2 {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	flex-flow: column;
+}
 
+.boutique {
+	text-align: center;
+	margin-right: 300px;
+	margin-left: 20%;
+	margin-top: 10px;
+	background: linear-gradient(#ee7b8c, #929292);
+	border-radius: 10px;
+}
 
+.Cart {
+	border-radius: 50px;
+	margin-left: 80%;
+	float: right;
+	position: fixed;
+	border:solid #6f1c1f;
+	background-color: #cc3a3f;
+	padding-right: 100px;
+	padding-left: 100px;
+}
 
+.container img{
+	float: right;
+	margin: 30px;
+}
 
 
 
