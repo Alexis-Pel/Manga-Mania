@@ -72,11 +72,6 @@ h1{
 }
 
 
-.Articles{
-background-color:wheat ;
-display: flex;
-}
-
 .image{
 
 width: 100px;
@@ -95,6 +90,51 @@ p{
 	margin-left: 20px;
 	margin-right: 20px;
 
+}
+
+.Naruto {
+	display: flex;
+	flex-direction: column;
+}
+
+.naruto{
+	margin-bottom: 20px;
+	background-color: wheat;
+	padding-right: 1;
+	border-radius: 3px;
+}
+.hunterXHunter{
+	margin-bottom: 20px;
+	background-color: wheat;
+	padding-right: 1;
+	border-radius: 3px;
+}
+
+.dragonBall{
+	margin-bottom: 20px;
+	background-color: wheat;
+	padding-right: 1;
+	border-radius: 3px;
+}
+
+.onePunchMan{
+	margin-bottom: 20px;
+	background-color: wheat;
+	padding-right: 1;
+	border-radius: 3px;
+}
+
+.blueExorciste{
+	margin-bottom: 20px;
+	background-color: wheat;
+	padding-right: 1;
+	border-radius: 3px;
+}
+.tokyoGhoul{
+	margin-bottom: 20px;
+	background-color: wheat;
+	padding-right: 1;
+	border-radius: 3px;
 }
 
 
