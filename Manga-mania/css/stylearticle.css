@@ -137,6 +137,39 @@ p{
 	border-radius: 3px;
 }
 
+#sousMenuArticle{
+	border-top: solid white 2px;
+}
+
+.sous{
+	display: none;	
+	}
+	
+	
+	.sous li{
+	float: none;
+	width: 100%;
+	text-align: left;
+	}
+	
+	.sous a{
+		display: flex;
+	flex-direction: column;
+	
+		padding: 10px;
+		border-bottom: none;
+	}
+	
+	.sous a:hover{
+	border-bottom: none;
+	
+	
+	}
+	
+	.deroulant > a:after{
+		content:"▼";
+	
+	}
 
 
 

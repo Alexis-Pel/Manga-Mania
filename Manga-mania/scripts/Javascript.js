@@ -19,10 +19,33 @@ let inftg = document.getElementById("infoTg");
 let sypbe = document.getElementById("synopsisBe");
 let infbe = document.getElementById("infoBe");
 
-window.addEventListener("click", dis)
-
 let clique = 0;
 
+let sous = document.getElementsByClassName("sous");
+let art = document.getElementById("art");
+let sousMenuArticles = document.getElementById("sousMenuArticle")
+
+window.addEventListener("click", dis)
+
+art.addEventListener("mouseenter", openArticle)
+sousMenuArticles.addEventListener("mouseleave", closeArticle)
+
+function openArticle() {
+    for (let index = 0; index < sous.length; index++) {
+        const element = sous[index];
+        
+    element.style.display = "block";
+    }
+
+}
+
+function closeArticle() {
+    for (let index = 0; index < sous.length; index++) {
+        const element = sous[index];
+        console.log(element);
+    element.style.display = "none";
+    }
+}
 
 function dis (event) {
     console.log(event.target.id)
@@ -31,7 +54,7 @@ function dis (event) {
         case "narutoimg":
             clique++;
             sypn.innerHTML = "Naruto (ナルト?) est un shōnen manga écrit et dessiné par Masashi Kishimoto. Naruto a été prépublié dans l'hebdomadaire Weekly Shōnen Jump de l'éditeur Shūeisha entre septembre 1999 et novembre 2014. La série a été compilée en 72 tomes.";
-            infn.innerHTML = "L'origine de Naruto se déroule dans un monde rétro-futuriste où, bien que de nombreuses technologies modernes aient vu le jour, les ninjas et les samouraïs sont restés de véritables puissances militaires. Chaque pays a un village, qui représente la force militaire du pays, dirigé par un Kage (prononcé Kagué). Les villages, à travers leurs ninjas, se livrent des guerres les uns aux autres, à petite ou grande échelle, que ce soit pour obtenir des caractéristiques avantageuses propres aux villages ennemis, ou pour soumettre un autre village et gagner en puissance";
+            infn.innerHTML = "L'origine de Naruto se déroule dans un monde rétro-futuriste où, bien que de nombreuses technologies modernes aient vu le jour, les ninjas et les samouraïs sont restés de véritables puissances militaires. Chaque pays a un village, qui représente la force militaire du pays, dirigé par un Kage (prononcé Kagué). Les villages, à travers leurs ninjas, se livrent des guerres les uns aux autres, à petite ou grande échelle, que ce soit pour obtenir des caractéristiques avantageuses propres aux villages ennemis, ou pour soumettre un autre village et gagner en puissance. <br/>Une nouvelle série du nom de Naruto Shippuden (trad. litt. : Naruto : Légende de la tornade) est diffusée sur TV Tokyo depuis le 15 février 2007. Cette série reprend quant à elle la trame du manga.";
          
             break;
     
@@ -64,6 +87,13 @@ function dis (event) {
             break;
     }
     
+}
+
+function setNote(){
+   let HXHNote = document.getElementById("HXHNote");
+     noteHXH = localStorage.getItem("Hunter X Hunter");
+     HXHNote.innerHTML = noteHXH;
+
 }
 
 

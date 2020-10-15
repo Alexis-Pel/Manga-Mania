@@ -3,7 +3,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+p{
+	color: white;
+}
 @font-face{
 	font-family: "FasterOne-Regular";
 	src:url("fonts/FasterOne-Regular.ttf");
@@ -24,9 +26,8 @@ header {
 }
 
 a {
-	color: #6f1c1f;
+	color: #ffc400;
 }
-
 ul {
 	display: flex;
 	justify-content: space-evenly;
@@ -45,7 +46,7 @@ ul li a:focus {
 	0 -2px 0 hsl(210,100%, 48%) inset,
 	0 -3px 0 hsl(210,100%, 54%) inset,
 	0 -4px 0 hsl(210,100%, 60%) inset,
-	0 -5px 0 hsl(210,100%, 70%) inset,
+	0 -5px 0 hsl(210,100%, 70%) inset,;
 }
 
 ul li a:active{
@@ -187,8 +188,57 @@ button{
 	box-shadow: black;
 }
 
+.rating {
+	direction: rtl;
+	float: left;
+ }
+ .rating a {
+	color: #aaa;
+	text-decoration: none;
+	font-size: 2em;
+	transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+	color: orange;
+	cursor: pointer;
+ }
 
+ #sousMenuArticle{
+	border-top: solid white 2px;
+}
 
+.sous{
+	display: none;	
+	}
+	
+	
+	.sous li{
+	float: none;
+	width: 100%;
+	text-align: left;
+	}
+	
+	.sous a{
+		display: flex;
+	flex-direction: column;
+	
+		padding: 10px;
+		border-bottom: none;
+	}
+	
+	.sous a:hover{
+	border-bottom: none;
+	
+	
+	}
+	
+	.deroulant > a:after{
+		content:"▼";
+	
+	}
 
 
 

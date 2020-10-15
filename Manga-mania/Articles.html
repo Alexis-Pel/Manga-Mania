@@ -2,10 +2,10 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/stylearticle.css">
-
+	<link rel="icon" type="image/x-icon" href="icone/favicon.ico" /><link rel="shortcut icon" type="image/x-icon" href="icone/favicon.ico" />
 	<title>Articles</title>
 </head>
-	<body>
+	<body onload="setNote()">
 		<header>
 			<h1> Manga Mania </h1>
 			<p> Cliquez sur une des images pour lire un de nos articles !</p>
@@ -13,11 +13,20 @@
 		<div class="menu">
 			<ul>
 			<li><a href="index.html">Accueil</a></li>
-			<li><a href="Articles.html">Articles</a></li>
+			<li class = "deroulant" id = "art"><a href="#">Articles</a>
 			<li><a href="boutique.html">Boutique</a></li>
 			<li><a href="#4">Contact</a></li>
 			</ul>
 		</div>
+		<ul id = "sousMenuArticle"> 
+			<li class = "sous"><a href = "#1.1"> Nouveautés </a></li>
+			<li class = "sous"><a href = "##synopsisN"> Naruto </a></li>
+			<li class = "sous"><a href = "#synopsisH"> Hunter X Hunter </a></li>
+			<li class = "sous"><a href = "#synopsisOp"> One punch man </a></li>
+			<li class = "sous"><a href = "#DragonBimg"> Dragon Ball </a></li>
+			<li class = "sous"><a href = "#synopsisTg"> Tokyo Ghoul </a></li>
+			<li class = "sous"><a href = "#synopsisBe"> Bleu exorciste </a></li>
+		</ul>
 <article class="Articles">
 		<div >
 			<h2 style="text-align: center; border: solid 2px wheat; float: start;background-color: rgb(216, 154, 103);"> Articles</h2>
@@ -34,7 +43,7 @@
 				<h3>Hunter X Hunter</h3>
 				<p id = "synopsisH"></p>
 				<img  class="image" id = "Hunterimg" value = "hunter" src="css/img/unnamed.jpg">
-				<p id = "infoH"></p>
+				<p id = "infoH"></p><h2> Vous avez attribuer la note de: <span id="HXHNote"></span></h2>
 			</div>
 
 			<div class="onePunchMan">
@@ -68,4 +77,5 @@
 </article>
 	<script type="text/javascript" src="scripts/Javascript.js"></script>
 	</body>
+	<footer id="footer"></footer>
 </html>
