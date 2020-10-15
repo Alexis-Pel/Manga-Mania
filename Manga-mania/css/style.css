@@ -3,12 +3,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+p,h3,h2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 p{
 	color: white;
-}
-@font-face{
-	font-family: "FasterOne-Regular";
-	src:url("fonts/FasterOne-Regular.ttf");
 }
 
 @font-face{

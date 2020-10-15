@@ -19,6 +19,15 @@ let inftg = document.getElementById("infoTg");
 let sypbe = document.getElementById("synopsisBe");
 let infbe = document.getElementById("infoBe");
 
+let sypbor = document.getElementById("synopsisBor");
+let infbor = document.getElementById("infoBor");
+
+let sypDBS = document.getElementById("synopsisDBS");
+let infDBS = document.getElementById("infoDBS");
+
+let sypAOT = document.getElementById("synopsisAOT");
+let infAOT = document.getElementById("infoAOT");
+
 let clique = 0;
 
 let sous = document.getElementsByClassName("sous");
@@ -48,8 +57,6 @@ function closeArticle() {
 }
 
 function dis (event) {
-    console.log(event.target.id)
-    
     switch (event.target.id) {
         case "narutoimg":
             clique++;
@@ -83,6 +90,21 @@ function dis (event) {
                 infbe.innerHTML = "Le monde de Blue Exorcist se compose de deux dimensions qui s'opposent comme deux faces de miroirs. Le premier est le monde dans lequel les êtres humains vivent, Assiah. L’autre est le monde des démons, la Géhenne. Normalement, le voyage et même toute forme de contact entre les deux est impossible. Toutefois, les démons peuvent passer dans ce monde en possédant tout ce qui existe en son sein. Satan est le dieu des démons, mais il y a une chose qu’il n’a pas : un réceptacle dans le monde humain assez puissant pour le contenir. À cette fin, il a engendré Okumura Rin et Okumura Yukio (mais seul Rin a hérité des pouvoirs de Satan, Yukio étant trop faible), ses fils, d’une femme humaine, mais ces derniers sont-ils en accord avec ses plans, ou doivent-ils devenir autre chose ? Après avoir tué le père gardien Fujimoto, lors d’une tentative qui aurait dû permettre à Rin de retourner dans le monde des démons, il lui donne un rêve : devenir un exorciste pour vaincre le dieu des démons."
             break;
 
+            case "Borutoimg":
+                infbor.innerHTML = "Depuis que son père est devenu Hokage et occupe la plus haute fonction du village de Konoha, Boruto Uzumaki, fils de Naruto Uzumaki et Hinata Hyûga, vit dans l'ombre de celui-ci. Cherchant toujours à attirer l'attention de ce dernier, il a pris la ferme résolution de le surpasser. Mais la vie que mènent les ninjas de haute-volée est rythmée par les missions complexes et les entraînements rigoureux, il va d'ailleurs apprendre à ses dépens que devenir le meilleur ninja n'est pas une tâche aisée. En compagnie de Sarada Uchiwa, la fille de Sasuke Uchiwa et Sakura Haruno et de Mitsuki le fils d'Orochimaru, Boruto va dès lors découvrir l'univers des ninjas, ainsi que ses fondements."
+                sypbor.innerHTML = "Boruto: Naruto Next Generations (BORUTO-ボルト- -NARUTO　NEXT　GENERATIONS-, Boruto: Naruto Nekusuto Jenerēshonzu?) est un manga dérivé faisant suite à Naruto, par Ukyō Kodachi et dessiné par Mikio Ikemoto, sous la supervision de Masashi Kishimoto, l'auteur du manga Naruto. Il est prépublié depuis le 9 mai 2016 dans le magazine Weekly Shōnen Jump et publié en volumes reliés par Shūeisha depuis août 2016. La version française est publiée par Kana depuis mars 2017.Une adaptation en anime est diffusée depuis le 5 avril 2017 sur TV Tokyo au Japon1 et en simulcast une heure après la diffusion japonaise sur Anime Digital Network en VOSTFr dans les pays francophones2 le dimanche à 9h30 pendant l'heure d'hiver et à 10h30 pendant l'heure d'été3. En France, il est diffusé depuis le 28 mai 2018 en VF sur Game One4. Au Québec, il est diffusé à 8h30 le samedi et dimanche matin sur Unis Télé ."
+            break;
+
+            case "DBSimg":
+                sypDBS.innerHTML = "Dragon Ball Super (ドラゴンボール超スーパー, Doragon bōru sūpā?) est une série télévisée d'animation japonaise produite par le studio Toei Animation, diffusée du 5 juillet 2015 au 25 mars 2018 sur la chaîne Fuji TV. Akira Toriyama, auteur du manga original, est crédité en tant que scénariste et responsable du concept art des personnages1 de cette série, qui fait office de suite directe à son œuvre."
+                infDBS.innerHTML ="Après le combat contre Boo, la Terre connait une période de paix. Cependant, le dieu de la destruction, Beerus (破壊神ビルス, Hakaishin Birusu?), vient de se réveiller d'un sommeil de 39 ans avec l'intention d'affronter le Super Saiyan Divin (超サイヤ人ゴッド, Sūpā Saiya-jin Goddo?), le guerrier légendaire dont parle une ancienne prophétie exprimée par le Poisson Oracle.Beerus part alors à la recherche de ce Super Saiyan Divin. Il apparaît sur la planète Kaio, là où se trouve Son Goku. Ce dernier décide de l'affronter mais malgré sa puissance en Super Saiyan 3, il ne parvient pas à le battre. Beerus va ensuite sur Terre accompagné de l'ange, Whis. Ils rencontrent Bulma, qui va les inviter à sa fête d'anniversaire. Tout se passe bien jusqu'au moment où Boo mange tous les flans. Beerus s'énerve et menace de détruire la planète Terre."
+            break;
+
+            case "AOTimg":
+                sypAOT.innerHTML = "L’Attaque des Titans (進撃の巨人, Shingeki no Kyojin?, litt. Les Titans assaillants, souvent abrégé SnK) est un shōnen manga écrit et dessiné par Hajime Isayama. Il est prépublié depuis septembre 2009 dans le magazine Bessatsu Shōnen Magazine de l’éditeur Kōdansha, et trente-deux tomes sont sortis en septembre 2020. La version française est publiée par Pika Édition dans la collection seinen depuis juin 2013."
+                infAOT.innerHTML ="L’histoire tourne autour du personnage d’Eren Jäger dans un monde où l’humanité vit entourée d’immenses murs pour se protéger de créatures gigantesques, les Titans. Le récit raconte le combat mené par l’humanité pour reconquérir son territoire, en éclaircissant les mystères liés à l’apparition des Titans."
+            break;
+
         default:
             break;
     }
@@ -93,6 +115,18 @@ function setNote(){
    let HXHNote = document.getElementById("HXHNote");
      noteHXH = localStorage.getItem("Hunter X Hunter");
      HXHNote.innerHTML = noteHXH;
+
+     let BorutoNote = document.getElementById("BorutoNote");
+     noteBoruto = localStorage.getItem("Boruto");
+     BorutoNote.innerHTML = noteBoruto;
+
+     let DBSNote = document.getElementById("DBSNote");
+     noteDBS = localStorage.getItem("DBS");
+     DBSNote.innerHTML = noteDBS;
+
+     let AOTNote = document.getElementById("AOTNote");
+     noteAOT = localStorage.getItem("AOT");
+     AOTNote.innerHTML = noteAOT;
 
 }
 

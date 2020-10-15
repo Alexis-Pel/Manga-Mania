@@ -1,6 +1,7 @@
 let HXH = "Hunter X Hunter"
-let Boruto = "Boruto : Naruto Next Generation"
-let DBSuper = "Dragon Ball Super"
+let Boruto = "Boruto"
+let DBS = "DBS"
+let AOT = "AOT"
 
 function TEST() {
     let PSEUDO = prompt('Veuillez entrer votre nom.');
@@ -53,9 +54,9 @@ function TEST3(){
   }
 
 var noteTab=new Array();
-noteTab[0]="1 ☆";
-noteTab[1]="2 ☆";
-noteTab[2]="3 ☆";
-noteTab[3]="4 ☆";
-noteTab[4]="5 ☆";
+noteTab[0]="1☆";
+noteTab[1]="2☆";
+noteTab[2]="3☆";
+noteTab[3]="4☆";
+noteTab[4]="5☆";
 var longueur=noteTab.length;

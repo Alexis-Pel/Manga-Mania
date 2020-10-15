@@ -97,46 +97,12 @@ p{
 	flex-direction: column;
 }
 
-.naruto{
+.Boruto,.blueExorciste,.dragonBall,.tokyoGhoul,.onePunchMan,.hunterXHunter,.naruto,.DBS,.AOT{
 	margin-bottom: 20px;
 	background-color: wheat;
 	padding-right: 1;
 	border-radius: 3px;
 }
-.hunterXHunter{
-	margin-bottom: 20px;
-	background-color: wheat;
-	padding-right: 1;
-	border-radius: 3px;
-}
-
-.dragonBall{
-	margin-bottom: 20px;
-	background-color: wheat;
-	padding-right: 1;
-	border-radius: 3px;
-}
-
-.onePunchMan{
-	margin-bottom: 20px;
-	background-color: wheat;
-	padding-right: 1;
-	border-radius: 3px;
-}
-
-.blueExorciste{
-	margin-bottom: 20px;
-	background-color: wheat;
-	padding-right: 1;
-	border-radius: 3px;
-}
-.tokyoGhoul{
-	margin-bottom: 20px;
-	background-color: wheat;
-	padding-right: 1;
-	border-radius: 3px;
-}
-
 #sousMenuArticle{
 	border-top: solid white 2px;
 }
